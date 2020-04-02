@@ -12,8 +12,8 @@ namespace CdsaSampleDataGenerator {
 
     static void Main() {
 
-      // CdsaManager.DisplayWhoAmIInfo();
-      // CdsaManager.DisplayDiscoveredInstance();
+      CdsaManager.DisplayWhoAmIInfo();
+    // CdsaManager.DisplayDiscoveredInstance();
 
       // CdsaManager.DeleteAllAccounts();
       // CdsaManager.DeleteAllContacts();
@@ -33,8 +33,8 @@ namespace CdsaSampleDataGenerator {
       // CdsaManager.CreateAcmeProductEntity();
       // CdsaManager.DisplayAcmeProductEntityDefinition();
 
-      //Console.Write("Press ENTER to continue...");
-      //Console.ReadLine();
+      Console.Write("Press ENTER to continue...");
+      Console.ReadLine();
     }
   }
 }

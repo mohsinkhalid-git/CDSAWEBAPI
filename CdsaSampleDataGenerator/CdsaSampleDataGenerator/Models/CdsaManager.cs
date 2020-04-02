@@ -14,10 +14,10 @@ namespace CdsaSampleDataGenerator.Models {
 
   class CdsaManager {
     // 
-    const string cdsaInstanceId = "";
+    const string cdsaInstanceId = "orgdb78d8f2";
 
-    const string clientId = "";
-    static readonly Uri redirectUri = new Uri("https://localhost/app1234");
+    const string clientId = "0c608efa-299e-44d9-a4bc-a26ec5134a51";
+    static readonly Uri redirectUri = new Uri("https://localhost/MKnativeapp");
 
     #region "Grungy stuff"
 
@@ -50,9 +50,10 @@ namespace CdsaSampleDataGenerator.Models {
 
     static string GetAccessTokenUnattended(string resourceUri = cdsaInstanceUrl) {
       if (cachedAccessToken.Equals("")) {
-        string userName = "XYZ@ABC.onMicrosoft.com";
-        string userPassword = "";
-        var authContext = new AuthenticationContext(aadAuthorizationEndpoint);
+        string userName = "D365.User05@mazikglobal.com";
+        string userPassword = "Usr365D";
+            
+                var authContext = new AuthenticationContext(aadAuthorizationEndpoint);
         var userPasswordCredential = new UserPasswordCredential(userName, userPassword);
         AuthenticationResult result =
           authContext.AcquireTokenAsync(resourceUri, clientId, userPasswordCredential).Result;
